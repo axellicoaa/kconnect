@@ -1,5 +1,5 @@
 "use client"
-import { BarChart3, Users, FileText, LogOut } from "lucide-react"
+import { BarChart3, Users, FileText, LogOut, Building} from "lucide-react"
 import Link from "next/link"
 import { useAuth } from "../context/AuthContext"
 
@@ -26,6 +26,7 @@ export default function Header() {
             <BarChart3 className="h-4 w-4" />
             Dashboard
           </Link>
+
           <Link
             href="/reporte"
             className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
@@ -39,6 +40,13 @@ export default function Header() {
           >
             <Users className="h-4 w-4" />
             Empleados
+          </Link>
+          <Link
+          href="/departments"
+          className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+          >
+            <Building className="h-4 w-4 "/>
+            Departamentos
           </Link>
         </nav>
 
